@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@media  (max-device-width:500px) {
+  p.paragraph{
+    line-height: 1.6em;
+    font-size: 1.4em;
+    margin: 3% 3% 0% 8%;
+  }
+  div#titleCordel> h1{
+    font-size: 350%;
+  }
+  section#img2{
+    background-size: cover;
+  }
+  section#img1{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+}
+@font-face{
+  src: url(../pacote/fontes/Passion_One/PassionOne-Bold.ttf);
+  font-family: 'Passion One';
+}
+
+@font-face {
+  font-family:'Sriracha';
+  src: url(../pacote/fontes/Sriracha/Sriracha-Regular.ttf);
+}
+:root{
+  --font1:'Passion One';
+  --font2:'Sriracha';
+}
+html,body{
+  min-height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: black;
+  color: white;
+  margin: none;
+  text-align: center;
+}
+#titleCordel{
+  margin: auto;
+}
+#titleCordel>h1{
+  font-family:var(--font1);
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 0;
+  padding-top: 50px;
+}
+.author{
+  padding-bottom: 50px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+main p{
+  margin: 3% 3% 3% 1%;
+  font-family: var(--font2);
+  /*font-size: clamp(0.1em, 2.5em, 2.5em);*/
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+section{
+  padding-bottom: 10vh;
+}
+section.normal{
+  background-color: #fff;
+  color: rgba(0, 0, 0);
+}
+section.imagem{
+  background-color: black;
+  color: white;
+}
+section.imagem > p{
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(36, 33, 33, 0);
+}
+section#img2>p{
+  background-color: rgba(36, 33, 33, 0.632);
+}
+#img1{
+  background-image: url('../pacote/imagens/background001.jpg');
+  background-attachment: fixed;
+  background-position: right center;
+}
+#img2{
+  background-attachment: fixed;
+  background-position: center center;
+  background-image: url('../pacote/imagens/background002.jpg');
+}
+footer p{
+  padding: 10px 0;
+  margin: 0;
+}
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
